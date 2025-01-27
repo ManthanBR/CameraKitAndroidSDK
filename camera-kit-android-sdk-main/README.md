@@ -4,7 +4,7 @@
 
 # Camera Kit for Android
 
-[Home Page](https://developers.snap.com/camera-kit/home) | [Documentation & Guides](https://developers.snap.com/camera-kit/getting-started/what-is-camera-kit) | [Showcase](https://ar.snap.com/camera-kit) | [API Reference](https://kit.snapchat.com/reference/CameraKit/android/1.37.0/index.html) | [Developer Portal](https://kit.snapchat.com/manage/) | [My Lenses](https://my-lenses.snapchat.com/) | [Discord](https://discord.gg/snapar)
+
 </div>
 
 Camera Kit brings the power of Snap's AR platform to your websites and mobile apps on iOS and Android. It has never been easier to create and deliver scalable, multi-platform AR experiences to meet your customers, wherever they are.
@@ -30,7 +30,6 @@ Camera Kit brings the power of Snap's AR platform to your websites and mobile ap
 - World Tracking
 - Background Segmentation
 - Location AR
-- and [many more](https://developers.snap.com/camera-kit/ar-content/ar-overview) 
 
 ### Android SDK
 - Integrate with Camera Kit com.snap.camerakit.Session, which allows to maintain full control over session configuration, management, and lifecycle
@@ -40,9 +39,7 @@ Camera Kit brings the power of Snap's AR platform to your websites and mobile ap
 - Supports Android 5.0+ and SDK 21+
 
 ## Integration Steps
-1. [Setup](https://developers.snap.com/camera-kit/getting-started/setting-up-accounts) your Camera Kit application using [Developer Portal](https://kit.snapchat.com/manage)
-2. [Integrate](https://developers.snap.com/camera-kit/integrate-sdk/mobile/android) Camera Kit SDK into your Android application
-3. [Create](https://developers.snap.com/camera-kit/ar-content/build-lenses) AR experiences using [Lens Studio](https://ar.snap.com/lens-studio) and manage them using [My Lenses](https://my-lenses.snapchat.com/) site
+2. Integrate Camera Kit SDK into your Android application
 
 ### Configuration
 
@@ -54,7 +51,7 @@ All of the Camera Kit artifacts are published under a single version and it is p
     implementation "com.snap.camerakit:support-camerax:$cameraKitVersion"
 ```
 
-In order for Camera Kit to be able to communicate with remote services to get content such as lenses, app needs to provide Camera Kit its unique "API token", this can be found at [Snap Developer Portal](https://devportal.snap.com/manage/). The easiest way to do this is to define the token within the app's [AndroidManifest.xml](./Samples/camerakit-sample-basic/src/main/AndroidManifest.xml):
+In order for Camera Kit to be able to communicate with remote services to get content such as lenses, app needs to provide Camera Kit its unique "API token", The easiest way to do this is to define the token within the app's [AndroidManifest.xml](./Samples/camerakit-sample-basic/src/main/AndroidManifest.xml):
 
 ```xml
 <application
@@ -106,7 +103,7 @@ android {
 ```
 
 ### Applying AR Lens
-You can find lens group IDs and specific lens IDs on [My Lenses](https://my-lenses.snapchat.com/) site
+
 ```kotlin
     cameraKitSession.apply {
         lenses.repository.observe(
@@ -145,9 +142,7 @@ This project includes several sample apps that demonstrate different approaches 
 
 ## Development
 
-### Push To Device (P2D)
 
-Applications can receive lenses from Lens Studio using the P2D feature. See [P2D Integration](https://developers.snap.com/camera-kit/guides/mobile-customization/in-app-lens-testing).
 
 
 ## Troubleshooting
@@ -166,5 +161,3 @@ The following is a list of common issues and suggestions on how to troubleshoot 
 
 - Attach debugger to your app, enable Java exception breakpoints and build a `Session` while checking that there are no unexpected exceptions with stacktraces related to Camera Kit.
 - Attach debugger to your app, pause all threads and export their state into a text file - check that there are no deadlocked threads related to Camera Kit.
-- Check Camera Kit [FAQ page](https://docs.snap.com/camera-kit/faq).
-- Need extra support? [Check our support page](https://docs.snap.com/camera-kit/support)
