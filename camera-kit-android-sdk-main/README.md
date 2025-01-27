@@ -6,7 +6,7 @@
 
 </div>
 
-Camera Kit brings the power of Snap's AR platform to your websites and mobile apps on iOS and Android. It has never been easier to create and deliver scalable, multi-platform AR experiences to meet your customers, wherever they are.
+Camera Kit brings the power of AR platform to your websites and mobile apps on iOS and Android. It has never been easier to create and deliver scalable, multi-platform AR experiences to meet your customers, wherever they are.
 
 <p align="center">
  <img src="https://github.com/user-attachments/assets/c7a6e407-ee76-4dd6-b174-4ac03f641131" width="9%" alt="distort" />
@@ -130,14 +130,8 @@ android {
 
 This project includes several sample apps that demonstrate different approaches to integrating the Camera Kit SDK:
 
-- [`camerakit-sample-basic`](./Samples/camerakit-sample-basic) demonstrates simplest and bare minimum 
-    way to integrate Camera Kit.
 - [`camerakit-sample-full`](./Samples/camerakit-sample-full) contains a fully functioning camera capture with lenses and preview flow.
-- [`camerakit-sample-custom-video`](./Samples/camerakit-sample-custom-video) demonstrates how to set up a custom video/audio encoding and audio source implementation.
-- [`camerakit-sample-custom-input`](./Samples/camerakit-sample-custom-input) demonstrates how to setup a custom input to the Camera Kit's processing pipeline.
-- [`camerakit-sample-simple`](./Samples/camerakit-sample-simple) demonstrates how to setup a simple, Camera Kit powered, camera capture flow via the standalone, batteries-included `CameraActivity`.
-- [`camerakit-sample-dynamic`](./Samples/camerakit-sample-dynamic) demonstrates how to dynamically load Camera Kit SDK as a dynamic feature module (DFM) as well as a standalone apk.
-- [`camerakit-sample-custom-carousel`](./Samples/camerakit-sample-custom-carousel) demonstrates how to provide your own carousel and preview screen to Camera Kit.
+
 
 ## Development
 
