@@ -128,7 +128,7 @@ android {
 
 ### Samples
 
-This project includes several sample apps that demonstrate different approaches to integrating the Camera Kit SDK:
+
 
 - [`camerakit-sample-full`](./Samples/camerakit-sample-full) contains a fully functioning camera capture with lenses and preview flow.
 
